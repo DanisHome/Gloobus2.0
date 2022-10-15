@@ -7,6 +7,6 @@
 # Support
 Discord: https://dsc.gg/gloobus
 
-DiscordName:Danis ⅁#0001
+DiscordName: Danis ⅁#0001
 
 Website: https://gloobus.tech
