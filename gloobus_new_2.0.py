@@ -41,11 +41,11 @@ def main():
     operation = input(f'''
     {Fore.BLUE}Whatchu wanna do?{Fore.RESET}
 {Fore.RED}     |--------------------------------------------------------------------------------------|
-{Fore.RED}     |{Fore.BLUE}    [1] Nitro Gen and Checker                      {Fore.RED} |                                 |             
-{Fore.RED}     |{Fore.BLUE}    [2] Token Gen and Checker                      {Fore.RED} |                                 | 
-{Fore.RED}     |{Fore.BLUE}    [3] Proxy Scraper                              {Fore.RED} |                                 |
-{Fore.RED}     |{Fore.BLUE}    [4] HTTP/SOCKS4/SOCKS5 Proxy Checker3          {Fore.RED} |                                 |
-{Fore.RED}     |{Fore.BLUE}    [5] Exit                                       {Fore.RED} |                                 |
+{Fore.RED}     |{Fore.BLUE}    [1] Nitro Gen and Checker                      {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}|             
+{Fore.RED}     |{Fore.BLUE}    [2] Token Gen and Checker                      {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}| 
+{Fore.RED}     |{Fore.BLUE}    [3] Proxy Scraper                              {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}|
+{Fore.RED}     |{Fore.BLUE}    [4] HTTP/SOCKS4/SOCKS5 Proxy Checker3          {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}|
+{Fore.RED}     |{Fore.BLUE}    [5] Exit                                       {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}|
 {Fore.RED}     |--------------------------------------------------------------------------------------|
 {Fore.LIGHTBLACK_EX}Please enter an correct Number>''')
     if str(operation) == "1":
