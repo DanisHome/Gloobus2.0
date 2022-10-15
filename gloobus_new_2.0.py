@@ -39,7 +39,7 @@ def main():
 
     operation = input(f'''
     {Fore.RED}Whatchu wanna do?{Fore.RESET}
-{Fore.BLUE}|------------------------------------------------------------------------------------------|
+{Fore.BLUE}   |-----------------------------------------------------------------------------------------|
     |    [1] Nitro Gen and Checker                      |                                  |             
     |    [2] Token Gen and Checker                      |                                  | 
     |    [3] Proxy Scraper                              |                                  |
