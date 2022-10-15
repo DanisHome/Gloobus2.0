@@ -4,7 +4,7 @@
 3. Now Open the File gloobus_new_2.0.py
 4. You are ready have fun!
 
-#Support
+# Support
 Discord: https://dsc.gg/gloobus
 DiscordName:Danis ⅁#0001
 Website: https://gloobus.tech
