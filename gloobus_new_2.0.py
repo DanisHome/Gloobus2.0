@@ -29,24 +29,25 @@ def main():
 {Fore.WHITE}██║   ██║██║     ██║   ██║██║   ██║██╔══██╗██║   ██║╚════██║
 {Fore.BLUE}╚██████╔╝███████╗╚██████╔╝╚██████╔╝██████╔╝╚██████╔╝███████║
 {Fore.RED} ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝
- https://gloobus.tech
+{Fore.LIGHTBLACK_EX}https://gloobus.tech
+{Fore.LIGHTBLACK_EX}https://lenda-development.eu
                ''')
 
     time.sleep(1)
     slowprint(
-        f'{Fore.LIGHTBLACK_EX}Made by: {Fore.RESET}{Fore.RED}Danis{Fore.RESET}', .02)
+        f'{Fore.LIGHTBLACK_EX}Made by: {Fore.RESET}{Fore.WHITE}Danis{Fore.RESET}', .02)
     time.sleep(1)
 
     operation = input(f'''
-    {Fore.RED}Whatchu wanna do?{Fore.RESET}
-{Fore.BLUE}   |-----------------------------------------------------------------------------------------|
-    |    [1] Nitro Gen and Checker                      |                                  |             
-    |    [2] Token Gen and Checker                      |                                  | 
-    |    [3] Proxy Scraper                              |                                  |
-    |    [4] HTTP/SOCKS4/SOCKS5 Proxy Checker3          |                                  |
-    |    [5] Exit                                       |                                  |
-    |--------------------------------------------------------------------------------------|
->''')
+    {Fore.BLUE}Whatchu wanna do?{Fore.RESET}
+{Fore.RED}     |--------------------------------------------------------------------------------------|
+{Fore.RED}     |{Fore.BLUE}    [1] Nitro Gen and Checker                      {Fore.RED} |                                 |             
+{Fore.RED}     |{Fore.BLUE}    [2] Token Gen and Checker                      {Fore.RED} |                                 | 
+{Fore.RED}     |{Fore.BLUE}    [3] Proxy Scraper                              {Fore.RED} |                                 |
+{Fore.RED}     |{Fore.BLUE}    [4] HTTP/SOCKS4/SOCKS5 Proxy Checker3          {Fore.RED} |                                 |
+{Fore.RED}     |{Fore.BLUE}    [5] Exit                                       {Fore.RED} |                                 |
+{Fore.RED}     |--------------------------------------------------------------------------------------|
+{Fore.LIGHTBLACK_EX}Please enter an correct Number>''')
     if str(operation) == "1":
         nitrogen()
     elif str(operation) == "2":
