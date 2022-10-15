@@ -17,9 +17,9 @@ def slowprint(s, c, newLine=True):
 def main():
     os.system('cls' if os.name == 'nt' else 'clear')
     if os.name == 'nt':
-        os.system("title crown")
+        os.system("title Gloobus")
     else:
-        print('crown')
+        print('Gloobus')
 
     print(f'''
 
