@@ -1,4 +1,4 @@
-#How to install?
+#<How to install?>
 1. Download Python on your PC.   Link:https://python.org/downloads
 2. Then open cmd and install all from requirements.txt
 3. Now Open the File gloobus_new_2.0.py
