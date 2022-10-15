@@ -17,19 +17,18 @@ def slowprint(s, c, newLine=True):
 def main():
     os.system('cls' if os.name == 'nt' else 'clear')
     if os.name == 'nt':
-        os.system("title Gloobus")
+        os.system("title gloobus")
     else:
-        print('Gloobus')
+        print('gloobus')
 
     print(f'''
 
-
- ██████╗ ██╗      ██████╗  ██████╗ ██████╗ ██╗   ██╗███████╗
-██╔════╝ ██║     ██╔═══██╗██╔═══██╗██╔══██╗██║   ██║██╔════╝
-██║  ███╗██║     ██║   ██║██║   ██║██████╔╝██║   ██║███████╗
-██║   ██║██║     ██║   ██║██║   ██║██╔══██╗██║   ██║╚════██║
-╚██████╔╝███████╗╚██████╔╝╚██████╔╝██████╔╝╚██████╔╝███████║
- ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝
+{Fore.WHITE} ██████╗ ██╗      ██████╗  ██████╗ ██████╗ ██╗   ██╗███████╗
+{Fore.BLUE}██╔════╝ ██║     ██╔═══██╗██╔═══██╗██╔══██╗██║   ██║██╔════╝
+{Fore.RED}██║  ███╗██║     ██║   ██║██║   ██║██████╔╝██║   ██║███████╗
+{Fore.WHITE}██║   ██║██║     ██║   ██║██║   ██║██╔══██╗██║   ██║╚════██║
+{Fore.BLUE}╚██████╔╝███████╗╚██████╔╝╚██████╔╝██████╔╝╚██████╔╝███████║
+{Fore.RED} ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝
  https://gloobus.tech
                ''')
 
@@ -39,13 +38,14 @@ def main():
     time.sleep(1)
 
     operation = input(f'''
-    {Fore.RED}                                                        whatchu wanna do?{Fore.RESET}
-
-    {Fore.BLUE}                                                   [1] Nitro Gen and Checker
-                                                       [2] Token Gen and Checker
-                                                       [3] Proxy Scraper
-                                                       [4] HTTP/SOCKS4/SOCKS5 Proxy Checker
-                                                       [5] Exit{Fore.RESET}
+    {Fore.RED}Whatchu wanna do?{Fore.RESET}
+{Fore.BLUE}|------------------------------------------------------------------------------------------|
+    |    [1] Nitro Gen and Checker                      |                                  |             
+    |    [2] Token Gen and Checker                      |                                  | 
+    |    [3] Proxy Scraper                              |                                  |
+    |    [4] HTTP/SOCKS4/SOCKS5 Proxy Checker3          |                                  |
+    |    [5] Exit                                       |                                  |
+    |--------------------------------------------------------------------------------------|
 >''')
     if str(operation) == "1":
         nitrogen()
