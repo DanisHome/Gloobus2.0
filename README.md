@@ -13,3 +13,6 @@
 **DiscordName:** Danis ⅁#0001
 
 **Website:** https://gloobus.tech
+
+#Last Fix
+Last Fix: 30.10.2022
