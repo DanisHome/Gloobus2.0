@@ -54,9 +54,14 @@ def main():
 {Fore.RED}     |{Fore.BLUE}    [2] Token Gen and Checker                      {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}| 
 {Fore.RED}     |{Fore.BLUE}    [3] Proxy Scraper                              {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}|
 {Fore.RED}     |{Fore.BLUE}    [4] HTTP/SOCKS4/SOCKS5 Proxy Checker3          {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}|
+<<<<<<< HEAD
 {Fore.RED}     |{Fore.BLUE}    [5] GeoIP                                      {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}|
 {Fore.RED}     |--------------------------------------------------------------------------------------
 {Fore.MAGENTA}                                      [E] Exit
+=======
+{Fore.RED}     |{Fore.BLUE}    [5] Exit                                       {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}|
+{Fore.RED}     |--------------------------------------------------------------------------------------|
+>>>>>>> 54684fbbeac38442dc9d37114f6fc416c9b35f64
 {Fore.LIGHTBLACK_EX}Please enter an correct Number>''')
     if str(operation) == "1":
         nitrogen()
