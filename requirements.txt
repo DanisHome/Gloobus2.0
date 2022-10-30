@@ -1,7 +1,9 @@
-colorama
-httpx
+colorama~=0.4.6
+httpx~=0.23.0
 h2
-lxml
+lxml~=4.9.1
 pybase64
 httpx[socks]
 httpx-socks
+
+psutil~=5.9.3

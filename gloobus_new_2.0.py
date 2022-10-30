@@ -5,6 +5,15 @@ from random import randint
 from lxml.html import fromstring
 from threading import Thread
 from httpx_socks import SyncProxyTransport
+import sys
+import mmap
+import socket
+import urllib
+from threading import Lock
+from datetime import datetime
+from struct import Struct
+import os, requests, time, random, sys
+import pprint
 
 
 def slowprint(s, c, newLine=True):
@@ -29,24 +38,26 @@ def main():
 {Fore.WHITE}██║   ██║██║     ██║   ██║██║   ██║██╔══██╗██║   ██║╚════██║
 {Fore.BLUE}╚██████╔╝███████╗╚██████╔╝╚██████╔╝██████╔╝╚██████╔╝███████║
 {Fore.RED} ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝
- https://gloobus.tech
+{Fore.LIGHTBLACK_EX}https://gloobus.tech
+{Fore.LIGHTBLACK_EX}https://lenda-development.eu
                ''')
 
     time.sleep(1)
     slowprint(
-        f'{Fore.LIGHTBLACK_EX}Made by: {Fore.RESET}{Fore.RED}Danis{Fore.RESET}', .02)
+        f'{Fore.LIGHTBLACK_EX}Made by: {Fore.RESET}{Fore.WHITE}Danis{Fore.RESET}', .02)
     time.sleep(1)
 
     operation = input(f'''
-    {Fore.RED}Whatchu wanna do?{Fore.RESET}
-{Fore.BLUE}   |-----------------------------------------------------------------------------------------|
-    |    [1] Nitro Gen and Checker                      |                                  |             
-    |    [2] Token Gen and Checker                      |                                  | 
-    |    [3] Proxy Scraper                              |                                  |
-    |    [4] HTTP/SOCKS4/SOCKS5 Proxy Checker3          |                                  |
-    |    [5] Exit                                       |                                  |
-    |--------------------------------------------------------------------------------------|
->''')
+    {Fore.BLUE}Whatchu wanna do?{Fore.RESET}
+{Fore.RED}     |--------------------------------------------------------------------------------------|
+{Fore.RED}     |{Fore.BLUE}    [1] Nitro Gen and Checker                      {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}|             
+{Fore.RED}     |{Fore.BLUE}    [2] Token Gen and Checker                      {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}| 
+{Fore.RED}     |{Fore.BLUE}    [3] Proxy Scraper                              {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}|
+{Fore.RED}     |{Fore.BLUE}    [4] HTTP/SOCKS4/SOCKS5 Proxy Checker3          {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}|
+{Fore.RED}     |{Fore.BLUE}    [5] GeoIP                                      {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}|
+{Fore.RED}     |--------------------------------------------------------------------------------------
+{Fore.MAGENTA}                                      [E] Exit
+{Fore.LIGHTBLACK_EX}Please enter an correct Number>''')
     if str(operation) == "1":
         nitrogen()
     elif str(operation) == "2":
@@ -56,6 +67,8 @@ def main():
     elif str(operation) == "4":
         proxychecker()
     elif str(operation) == "5":
+        GeoIP()
+    elif str(operation) == "E":
         exit()
     else:
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -101,6 +114,13 @@ def nitrogen():
     nitros()
     main()
 
+def GeoIP():
+    ip_input = input('  IP> ')
+    response = requests.get("http://extreme-ip-lookup.com/json/" + ip_input)
+    response.json()
+    pprint.pprint(response.json())
+    time.sleep(10)
+    main()
 
 
 
@@ -252,7 +272,7 @@ def proxychecker():
 
 def exit():
     os.system('cls' if os.name == 'nt' else 'clear')
-    slowprint('bye bye darlin', .02)
+    slowprint('Danis says:    BeyBey!', .02)
     time.sleep(2)
     os.system('cls' if os.name == 'nt' else 'clear')
     raise SystemExit
