@@ -1,4 +1,6 @@
 import os, re, random, string, time, sys, base64, httpx
+from tkinter import E
+from urllib import request
 from colorama import Fore
 from colorama import Style
 from random import randint
@@ -12,7 +14,7 @@ import urllib
 from threading import Lock
 from datetime import datetime
 from struct import Struct
-import os, requests, time, random, sys
+import os,  time, random, sys
 import pprint
 
 
@@ -48,7 +50,7 @@ def main():
     time.sleep(1)
 
     operation = input(f'''
-    {Fore.BLUE}Whatchu wanna do?{Fore.RESET}
+    {Fore.BLUE}❓Whatchu wanna do?{Fore.RESET}
 {Fore.RED}     |--------------------------------------------------------------------------------------|
 {Fore.RED}     |{Fore.BLUE}    [1] Nitro Gen and Checker                      {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}|             
 {Fore.RED}     |{Fore.BLUE}    [2] Token Gen and Checker                      {Fore.RED} |{Fore.GREEN} [-]Soon!                        {Fore.RED}| 
@@ -63,7 +65,7 @@ def main():
     elif str(operation) == "2":
         tokengen()
     elif str(operation) == "3":
-        proxyscraper()
+        scraper()
     elif str(operation) == "4":
         proxychecker()
     elif str(operation) == "5":
@@ -72,8 +74,20 @@ def main():
         exit()
     else:
         os.system('cls' if os.name == 'nt' else 'clear')
-        print("\n                                                      Incorrect option")
+        print("\n                                                      ❌Incorrect option❌")
         time.sleep(2)
+        main()
+
+def scraper():
+    r = request.get('https://api.proxyscrape.com/?request=getproxies&proxytype=http')
+    print(r.text)
+    p_type = input('  Type> ')
+    p_timeout = input('  Timeout> ')
+    f"https://api.proxyscrape.com/?request=getproxies&proxytype={p_type}&timeout={p_timeout}"
+    with open('proxies.txt', 'w') as f:
+        f.write(r.text)
+        print('The proxies have been saved to \033[31m`proxies.txt`')
+        time.sleep(5)
         main()
 
 
