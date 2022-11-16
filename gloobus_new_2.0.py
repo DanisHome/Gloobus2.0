@@ -97,7 +97,7 @@ def nitrogen():
     def check(prxtype,fileproxy):
         if prxtype == 'HTTP':
             proxtype = 'http://'
-        elif prxtype == 'SOCKS5':
+        elif prxtype == 'SOCKS5(Proxys)':
             proxtype = 'socks5://'
         nitro = ''.join(random.choice(string.ascii_uppercase + string.digits + string.ascii_lowercase) for _ in range(19))
         try:
